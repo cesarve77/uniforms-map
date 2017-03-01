@@ -7,12 +7,10 @@
 import SimpleSchema from 'simpl-schema'
 
 const schema = new SimpleSchema({
-    description: {type: String},
-    address: {type: Object},
-    "address.address": {type: String},
-    "address.position": {type: Object},
-    "address.position.lat": {type: Number},
-    "address.position.lng": {type: Number},
+    simpleField: {type: String},
+    complexField: {type: Object},
+    "complexField.a": {type: String},
+    "complexField.b": {type: String},
 })
 
 export default schema
